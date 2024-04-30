@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 12px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    font-weight: bold;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-right: 14px;
+    font-size: 14px; /* Set font size to 12 pixels */
+}
+
+.search-bar {
+    width: 100px;
+    margin-right: 5px;
+    font-size: 14px; /* Set font size to 12 pixels */
+}
+
+.search-button {
+    /* Style your search button as needed */
+}
+
+.filter {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container,
+.video-container,
+.audio-container {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image-container img,
+.video-container video,
+.audio-container audio {
+    
+    max-width: 128px;
+    max-height: 128px;
+    height: auto;
+    object-fit: contain;
+}
+
+.resource-details {
+    text-align: center;
+}
+
+.resource-details h3 {
+    margin-top: 0;
+}
+
+.resource-details p {
+    margin-bottom: 5px;
+}
