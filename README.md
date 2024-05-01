@@ -17,7 +17,6 @@ Library Dashboard is a web application built with Flask that allows users to bro
 
 1. Clone the repository:
 
-```bash
 git clone https://github.com/your-username/library-dashboard.git
 
 2. Navigate to the project directory:
@@ -39,7 +38,7 @@ python directory.py
 
 License
 This project is licensed under the MIT License.
-Acknowledgments
+
 
 Flask
 Flask-PyMongo
