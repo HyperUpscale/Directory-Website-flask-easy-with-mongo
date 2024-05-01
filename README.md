@@ -31,8 +31,9 @@ Set up the MongoDB database:
 4. Install MongoDB on your system if you haven't already
 Start the MongoDB server
 
-5. Start the application
-python directory.py
+5. Start the application:
+
+'''python directory.py'''
 
 
 
