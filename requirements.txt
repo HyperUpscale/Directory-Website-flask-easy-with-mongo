@@ -1,0 +1,12 @@
+bson
+Flask
+Flask-PyMongo
+Jinja2
+pillow
+pymongo
+requests
+responses
+urllib3
+Werkzeug
+WTForms
+favicons
