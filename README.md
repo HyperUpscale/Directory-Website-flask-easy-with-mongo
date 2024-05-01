@@ -33,7 +33,7 @@ Start the MongoDB server
 
 5. Start the application:
 
-'''python directory.py'''
+' python directory.py
 
 
 
