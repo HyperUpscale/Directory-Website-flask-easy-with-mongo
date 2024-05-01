@@ -30,7 +30,7 @@ nav a {
 
 main.main-grid {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: auto 1fr auto; /* Adjust column widths */
     gap: 20px;
     padding: 20px;
 }
@@ -69,7 +69,7 @@ main.main-grid {
     width: 200px; /* Reduced width */
     height: auto;
     margin: 5px; /* Reduced margin */
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -145,10 +145,20 @@ th {
     max-width: 100%;
 }
 
+/* SHORT  */
+/* .sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 200px;
+} */
+
 .sidebar {
     background-color: #f2f2f2;
     padding: 20px;
-    width: 200px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width as needed */
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    height: 100%;
 }
 
 .sidebar ul {
@@ -170,10 +180,25 @@ th {
     font-weight: bold;
 }
 
+.content-wrapper {
+    flex: 1; /* Allow the content to take up remaining space */
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 140px); /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
 .filter {
     background-color: #f2f2f2;
     padding: 20px;
-    width: 200px; /* Adjust the width as needed */
+    width: 100px;
+    position: sticky;
+    top: 0;
+    left: auto;
+    height: 100%;
 }
 
 .filter form {
@@ -184,4 +209,10 @@ th {
 
 .filter div {
     margin-bottom: 10px;
+}
+
+.center-buttons {
+    display: flex;
+    justify-content: center; /* This centers the button horizontally */
+    margin-top: 20px; /* Optional: adds some space above the button */
 }
