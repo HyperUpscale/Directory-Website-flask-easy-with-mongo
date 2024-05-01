@@ -16,7 +16,6 @@ Library Dashboard is a web application built with Flask that allows users to bro
 ## Installation
 
 1. Clone the repository:
-
 git clone https://github.com/your-username/library-dashboard.git
 
 2. Navigate to the project directory:
@@ -25,15 +24,13 @@ cd library-dashboard
 3. Install the required dependencies:
 pip install -r requirements.txt
 
-Set up the MongoDB database:
 
-
-4. Install MongoDB on your system if you haven't already
+4. Install MongoDB on your system if you haven't already:
 Start the MongoDB server
 
 5. Start the application:
 
-' python directory.py
+python directory.py
 
 
 
