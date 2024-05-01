@@ -1,0 +1,24 @@
+<div class="resource-card">
+    {% if resource.image %}
+<div class="image-container">
+    <img src="data:image/png;base64,{{ resource.image }}" alt="Image">
+</div>
+{% endif %}
+    <div class="resource-details">
+        <h3>
+            {% if resource.favicon %}
+            <img src="{{ resource.favicon }}" alt="Favicon" style="height: 16px; margin-right: 5px;">
+            {% endif %}
+            {{ resource.title }}
+        </h3>
+        <p>{{ resource.description }}</p>
+        <p><a href="{{ resource.link }}" target="_blank">{{ resource.link }}</a></p>
+        <p>Parameters: {% for parameter in resource.parameters %}{{ parameter }} {% endfor %}</p>
+        <!-- <p>Created: {{ resource.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</p> -->
+
+        <p>Created: {{ resource.created_at.strftime('%Y-%m-%d') }}</p>
+        <form action="{{ url_for('update_resource', resource_id=resource._id) }}" method="get">
+            <button type="submit">Edit</button>
+        </form>
+    </div>
+</div>
